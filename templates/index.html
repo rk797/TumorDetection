@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Object Detection with YOLO</title>
+    <link rel="stylesheet" href="../static/dist/css/output.css">
+    <link rel="stylesheet" href="../static/dist/css/custom.css">
+</head>
+
+<body class="bg-zinc-800 overflow-x-hidden h-screen flex justify-center items-center flex-col gap-32" id="landing-page">
+    <nav class="container mq-disable z-10">
+        <div class="flex gap-14 justify-center items-center font-semibold text-white">
+            <a href="/404">About</a>
+            <a href="/404">F.A.Q</a>
+            <a href="/404">Upload</a>
+        </div>
+    </nav>
+    <section class="h-fit flex items-center justify-center flex-col gap-32 mt-20">
+        <div class="w-fit flex justify-center items-center flex-col">
+            <h1 class="text-white text-9xl font-bold mb-10">TUMOR-DT</h1>
+            <h3 class="text-slate-400 text-2xl pb-5 max-w-lg">Submit an MRI or CT scan for inferencing</h3>
+        </div>
+        <form action="/upload" method="post" enctype="multipart/form-data" class="flex gap-8">
+            <label for="file" class="w-28 h-14 font-semibold rounded-lg p-3 tracking-widest text-lg text-white border-green-300 border-2 hover:border-white cursor-pointer flex items-center justify-center transition-all">
+                UPLOAD
+                <input type="file" name="file" id="file" accept=".jpg, .jpeg, .png" class="hidden">
+            </label>
+            <button type="submit" class="text-white font-bold p-1 border-2 border-green-300 rounded-lg w-28 h-14 flex items-center justify-center hover:border-white transition-all">
+                <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-arrow-right-short" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"/>
+                </svg>
+            </button>
+        </form>
+        </section>
+    <!-- <div class="hidden">
+        {% if result %}
+        {% if result.success %}
+            <h2 class="text-9xl font-bold text-white">Result:</h2>
+            <p>Confidence: {{ result.data.confidence }}</p>
+            <img src="{{ url_for('static', filename=result.data.output_image_path) }}" alt="Detected Image">
+        {% else %}
+            <p>Error: {{ result.error }}</p>
+        {% endif %}
+    {% endif %}
+
+    </div> -->
+    <footer>
+        <div class=" p-6 text-white flex justify-center items-center">
+            <p class="text-center mx-auto">Made by Ryan Khoshkbarchi.</p>
+        </div>
+    </footer>
+    
+</body>
+
+</html>

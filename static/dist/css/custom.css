@@ -1,0 +1,8 @@
+#landing-page{
+    background-image: linear-gradient(to bottom, rgba(3,6,23,255), rgba(17,23,42, 0.75)), url(https://media.discordapp.net/attachments/1199920903862108281/1208294423935324180/pexels-anna-shvets-4226219.jpg?ex=65e2c2df&is=65d04ddf&hm=4f2af77b2d6aa149ea29ba7afc0c4b70f2ab4145e8572d0659f2ce8ed08ea596&=&format=webp&width=525&height=350
+    );
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+
+}
