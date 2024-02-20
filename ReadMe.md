@@ -39,8 +39,8 @@ pip install -r requirements.txt
 localhost:8080
 ```
 
-### NOTICE
-* The TensorRT installation is quite a long process and therefore will not be documented here. Refer to the [docs](https://docs.nvidia.com/deeplearning/tensorrt/) for more information.
+> [!NOTE] 
+>* The TensorRT installation is quite a long process and therefore will not be documented here. Refer to the [docs](https://docs.nvidia.com/deeplearning/tensorrt/) for more >information.
 ### TensorRT requirements (Only required for building & running the quantized model)
 * cuDNN 8.9.0
 * TensorRT 8.6.1.6
