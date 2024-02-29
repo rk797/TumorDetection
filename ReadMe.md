@@ -1,4 +1,7 @@
 # Glioma Tumor Detection
+![detection](https://github.com/rk767/yolov8-tumor-detection/assets/48916019/1427e02a-0ebf-4770-898d-bd0f75386ee1)
+
+
 ## About the data:
 The data was mostly put together from various sources on Kaggle. You can find some of the references [here](https://www.kaggle.com/datasets/fernando2rad/brain-tumor-mri-images-44c?resource=download). The data has two folders `image` and `labels`. Each of which have their own corresponding `train` and `validation` sub folders.
 ## Motivation:
